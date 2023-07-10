@@ -1,7 +1,7 @@
 ## Aplicação de Exemplo: Calculadora de Investimento CDB
 Esta é uma aplicação de exemplo que combina o Angular e o .NET Framework para criar uma calculadora de investimento em **CDB (Certificado de Depósito Bancário)**. A aplicação permite calcular o rendimento bruto, rendimento líquido, valor final bruto e valor final líquido de um investimento em CDB com base em um valor inicial e quantidade de meses fornecidos.
 
-![](https://i.ibb.co/T2hTLfq/cdb.png)
+![](https://i.ibb.co/T2hTLfq/cdb.png](https://i.yourimageshare.com/sDxtdgvwcN.webp))
 
 ### Tecnologias Utilizadas
 **Angular:** um framework de desenvolvimento de aplicativos web em TypeScript.
