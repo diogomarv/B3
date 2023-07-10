@@ -1,7 +1,7 @@
 ## Aplicação de Exemplo: Calculadora de Investimento CDB
 Esta é uma aplicação de exemplo que combina o Angular e o .NET Framework para criar uma calculadora de investimento em **CDB (Certificado de Depósito Bancário)**. A aplicação permite calcular o rendimento bruto, rendimento líquido, valor final bruto e valor final líquido de um investimento em CDB com base em um valor inicial e quantidade de meses fornecidos.
 
-![](https://i.ibb.co/T2hTLfq/cdb.png)
+![](https://i.ibb.co/T2hTLfq/cdb.png](https://i.yourimageshare.com/sDxtdgvwcN.webp))
 
 ### Tecnologias Utilizadas
 **Angular:** um framework de desenvolvimento de aplicativos web em TypeScript.
@@ -49,8 +49,9 @@ E como não poderia faltar nesta camada, temos a pasta Response, onde fica a cla
 ```
 
 ### Como executar os Testes Unitários?
-**Back-end: ** No Visual Studio, clique com o botão direito do mouse no projeto de testes e depois clique em "Run Tests". Certifique-se de efetuar um "Clean" antes de rodar o projeto.
-**Front-end: ** No Visual Studio Code ou editor de sua preferência, navegue até a pasta do projeto e digite `npm test`
+**Back-end:** No Visual Studio, clique com o botão direito do mouse no projeto de testes e depois clique em "Run Tests". Certifique-se de efetuar um "Clean" antes de rodar o projeto. OBS: foi utilizado o padrão GWT (Given-When-Then) e AAA nos testes unitários.
+
+**Front-end:** No Visual Studio Code ou editor de sua preferência, navegue até a pasta do projeto e digite `npm test`
 ### Observações
 ##### 1. Não foi utilizado IoC no projeto por conta do tamanho do mesmo. Também não foi utilizado nenhuma biblioteca para validação, como o FluentValidation.
 ##### Em projetos maiores o recomendável é seguir todas as práticas e padrões de projeto, incluindo libs para facilitar o desenvolvimento, porém em projetos menores, menos, pode ser mais.
