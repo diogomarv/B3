@@ -19,7 +19,9 @@ A parte frontend da aplicação foi desenvolvida usando o Angular, um framework 
 A parte backend da aplicação foi desenvolvida usando o .NET Framework, um framework de desenvolvimento robusto para criar aplicativos Windows e web usando a linguagem C#.
 
 **B3.WebApi:** contém as Controllers necessárias para cada requisição. Também possui Model para requests;
-**B3.Services: **camada responsável pelas regras de negócios. Nela há a classe chamada `CalculoCdb.cs` onde é responsável apenas por realizar o cálculo de CDB, respeitando o princípio de ter apenas uma única responsabilidade. Além disso, temos uma classe dentro de Helpers/Moeda, chamada `FormatacaoMonetaria` do tipo *static*, onde a mesma é responsável apenas por converter valores decimais para o R$.
+
+**B3.Services:** camada responsável pelas regras de negócios. Nela há a classe chamada `CalculoCdb.cs` onde é responsável apenas por realizar o cálculo de CDB, respeitando o princípio de ter apenas uma única responsabilidade. Além disso, temos uma classe dentro de Helpers/Moeda, chamada `FormatacaoMonetaria` do tipo *static*, onde a mesma é responsável apenas por converter valores decimais para o R$.
+
 **B3.Models:** Esta pasta contém as classes de modelo que representam os objetos de domínio da aplicação. Dentro da pasta Ativos/CDB, temos 3 classes:
 1. `Aliquotas.cs` -> Classe static responsável por referenciar todas as aliquotas necessárias para os cálculos de CDB. Nela contém seus períodos e seus respectivos valores setados como decimais. O tipo foi pensando por ser de 128 bit, **recomendado** quando lidamos com porcentagem e aplicações financeiras. 
 Temos também um método que possui uma lógica para obtermos o percentual da taxa do IR pelo tempo fornecido (em meses).
