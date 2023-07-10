@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "05TnuqVBzPKokcVO2bkVMLeUQKePRp+vKjmb2Quc34/geNQuDw6AsMrPhe7ch6oK41I3yhHdhypohEgR/FxY7w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Diogo\\Documents\\B3\\BackendB3\\B3.Services\\B3.Services.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Diogo\\.nuget\\packages\\mstest.testadapter\\2.2.10\\mstest.testadapter.2.2.10.nupkg.sha512",
+    "C:\\Users\\Diogo\\.nuget\\packages\\mstest.testframework\\2.2.10\\mstest.testframework.2.2.10.nupkg.sha512",
+    "C:\\Users\\Diogo\\.nuget\\packages\\selenium.webdriver\\4.8.1\\selenium.webdriver.4.8.1.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,6 @@
+C:\Users\Diogo\Documents\B3\BackendB3\B3.Model\bin\Debug\B3.Model.dll
+C:\Users\Diogo\Documents\B3\BackendB3\B3.Model\bin\Debug\B3.Model.pdb
+C:\Users\Diogo\Documents\B3\BackendB3\B3.Model\obj\Debug\B3.Models.csproj.AssemblyReference.cache
+C:\Users\Diogo\Documents\B3\BackendB3\B3.Model\obj\Debug\B3.Models.csproj.CoreCompileInputs.cache
+C:\Users\Diogo\Documents\B3\BackendB3\B3.Model\obj\Debug\B3.Model.dll
+C:\Users\Diogo\Documents\B3\BackendB3\B3.Model\obj\Debug\B3.Model.pdb
