@@ -1,0 +1,42 @@
+<div class="box-center">
+    <mat-card class="text-center" style="width:90%;padding: 50px;">
+        <mat-card-title>Calculadora de investimento CDB</mat-card-title>
+        <mat-card-content>
+            <br />
+            <mat-form-field appearance="fill" class="w-100">
+                <mat-label>Valor que você deseja investir</mat-label>
+                <input matInput [allowNegativeNumbers]="false" prefix="R$ " mask="separator.2" thousandSeparator="." type="text" [formControl]="valorInvestimentoFormControl">
+                <a mat-icon-button matSuffix>
+                    <mat-icon>monetization_on</mat-icon>
+                </a>
+            </mat-form-field>
+            <mat-form-field appearance="fill" class="w-100">
+                <mat-label>Tempo de investimento em meses</mat-label>
+                <input matInput [formControl]="tempoInvestimentoFormControl" mask="0*" suffix=" meses" type="text">
+                <a mat-icon-button matSuffix>
+                    <mat-icon>access_time</mat-icon>
+                </a>
+            </mat-form-field>
+            <br />
+            <br />
+            <div class="align-between">
+                <button mat-raised-button class="w-100" (click)="calcular()" color="accent">{{ loading == true ? 'Calculando...' : 'Calcular Investimento' }} </button>
+            </div>
+            <br />
+            <br />
+            <mat-divider></mat-divider>
+            <br />
+            <br />
+
+              <h2>
+                {{ dataSource && dataSource.Titulo }}
+              </h2>
+  
+              <h4>
+                {{ dataSource && dataSource.Mensagem }}
+              </h4>
+
+            
+        </mat-card-content>
+    </mat-card>
+</div>

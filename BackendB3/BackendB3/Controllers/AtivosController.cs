@@ -1,7 +1,7 @@
 ﻿using B3.Model.Calculo;
 using BackendB3.Models.Request;
 using System;
-using System.Collections.Generic;
+using System.Web.Http.Cors;
 using System.Linq;
 using System.Web;
 using System.Web.Http;
@@ -17,6 +17,7 @@ namespace BackendB3.Controllers
             _calculoCdb = new CalculoCdb();
         }
 
+        [EnableCors(origins: "*", headers: "*", methods: "*")]
         [Route("api/ativos/calcular-cdb")]
         [HttpPost]
         public IHttpActionResult Calcular([FromBody] CalcularCdbRequest request)
