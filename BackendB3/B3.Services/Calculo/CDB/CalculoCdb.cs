@@ -24,8 +24,8 @@ namespace B3.Model.Calculo
 
             Cdb cdb = new Cdb
             {
-                ValorFinalBruto = (((valorInicial * rendimento) - valorInicial) * qtdMeses) + valorInicial
-            };
+                ValorFinalBruto = CalcularRendimentoCDB(valorInicial, TaxasConfig.TaxaCdi, TaxasConfig.TaxaTb, qtdMeses)
+        };
 
             cdb.RendimentoBruto = (cdb.ValorFinalBruto - valorInicial);
             cdb.DescontoImpostoRenda = Aliquotas.ObterTaxaPercentualImpostoDeRendaPorTempo(ETempoInvestimentoExtensions.TempoInvestimento(qtdMeses)) * cdb.RendimentoBruto;
@@ -43,6 +43,18 @@ namespace B3.Model.Calculo
                 $"| Rendimento Bruto: {FormatacaoMonetaria.FormatarValor(cdb.RendimentoBruto)} " +
                 $"| Descontos de IR: {FormatacaoMonetaria.FormatarValor(cdb.DescontoImpostoRenda)} ", 
                 cdb);
+        }
+
+        private static decimal CalcularRendimentoCDB(decimal valorInicial, decimal taxaCDI, decimal taxaTB, uint numMeses)
+        {
+            decimal rendimento = valorInicial;
+
+            for (int i = 0; i < numMeses; i++)
+            {
+                rendimento *= (1 + taxaCDI * taxaTB);
+            }
+
+            return rendimento;
         }
 
     }
